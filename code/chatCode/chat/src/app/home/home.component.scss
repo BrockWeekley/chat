@@ -1,0 +1,41 @@
+.container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.log {
+    list-style-type: none;
+}
+
+.chat {
+    width: 90%;
+    height: 80%;
+    border: solid black 1px;
+    border-radius: 5px;
+    resize: none;
+    margin: 0 0 5% 0;
+}
+
+.input {
+    width: 75%;
+    border-radius: 5px;
+    resize: none;
+}
+
+.submit {
+    float: right;
+    border-radius: 5px;
+    margin: -3% 9% 0 0;
+    height: 6%;
+    width: 10%;
+}
+
+.delete {
+    float: right;
+    border-radius: 5px;
+    margin: 0 9% 0 0;
+    height: 6%;
+    width: 10%;
+    z-index: 20;
+}
