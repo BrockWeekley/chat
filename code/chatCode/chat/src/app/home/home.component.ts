@@ -95,6 +95,7 @@ export class HomeComponent implements OnInit {
           }
         );
       });
+      
         // this.date = null;
         // let hour = null;
         // let minute = null;

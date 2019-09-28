@@ -22,7 +22,8 @@ export class FirebaseService {
   }
 
   date() {
-    return this.http.get<any>('http://api.timezonedb.com/v2.1/get-time-zone?key=QSU8HCQU9BBY&format=json&by=zone&zone=CDT');
+    console.log('changed');
+    return this.http.get<any>('https://api.timezonedb.com/v2.1/get-time-zone?key=QSU8HCQU9BBY&format=json&by=zone&zone=CDT');
   }
 
   createMessage(value) {

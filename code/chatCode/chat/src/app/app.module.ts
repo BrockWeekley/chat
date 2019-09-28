@@ -11,7 +11,12 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
 import { HttpClientModule } from '@angular/common/http';
-
+import {NoopAnimationsModule} from '@angular/platform-browser/animations';
+import {MatCardModule, 
+        MatButtonModule,
+        MatToolbarModule,
+        MatInputModule
+        } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -24,7 +29,15 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
-    HttpClientModule
+    HttpClientModule,
+    NoopAnimationsModule,
+    MatCardModule,
+    MatButtonModule,
+    MatToolbarModule,
+    MatInputModule
+  ],
+  exports: [
+
   ],
   providers: [ AngularFirestore ],
   bootstrap: [AppComponent]

@@ -1,12 +1,23 @@
+<mat-toolbar color="primary" class="toolbar">
+        Home
+</mat-toolbar>
 <div class="container">
-    <div class="chat" disabled> 
-        <ul class="log">
-            <li *ngFor="let message of messages">
-            {{message.msg}}
-            </li>
-        </ul>
+    <mat-card class="chat" disabled> 
+        <mat-card-title>
+            Welcome to the chat!
+            <div class="line"></div>
+        </mat-card-title>
+        <mat-card-content>
+            <ul class="log">
+                <li *ngFor="let message of messages">
+                {{message.msg}}
+                </li>
+            </ul>
+        </mat-card-content>
+    </mat-card>
+    <div class="enter">
+        <input matInput class="input" [(ngModel)]="toSend" (keydown.enter)="send()">
+        <button mat-raised-button class="submit" (click)="send()" (keydown.enter)="send()">Enter</button>
+        <button mat-raised-button class="delete" (click)="delete()">Clear</button>
     </div>
-    <textarea class="input" [(ngModel)]="toSend"></textarea>
-    <button class="submit" (click)="send()">Enter</button>
-    <button class="delete" (click)="delete()">Clear</button>
 </div>
